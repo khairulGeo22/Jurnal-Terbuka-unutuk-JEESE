@@ -35,3 +35,274 @@ fetch("data/highlights.json")
       `;
     });
   });
+/* =========================
+   RESET & BASE
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background: #ffffff;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #ffffff;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+  color: #0f766e;
+}
+
+.menu {
+  display: flex;
+  gap: 25px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #0f766e;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.hamburger {
+  display: none;
+}
+
+/* BUTTON */
+.btn {
+  background: #0f766e;
+  color: #fff;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #0d5f58;
+}
+
+.btn-outline {
+  border: 1px solid #0f766e;
+  color: #0f766e;
+  background: transparent;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-outline:hover {
+  background: #0f766e;
+  color: white;
+}
+
+/* =========================
+   HERO
+========================= */
+.hero {
+  position: relative;
+  height: 520px;
+  background: url('../images/hero.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(0,0,0,0.7),
+    rgba(0,0,0,0.3)
+  );
+}
+
+.hero-content {
+  position: relative;
+  max-width: 700px;
+  padding: 60px;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.hero-content p {
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.hero-btn {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+/* =========================
+   FEATURES
+========================= */
+.features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  padding: 30px;
+  background: #f7f7f7;
+  font-weight: 500;
+}
+
+/* =========================
+   CONTENT GRID
+========================= */
+.content {
+  padding: 50px 40px;
+}
+
+.content h2 {
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #eee;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s;
+  background: white;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card h3 {
+  padding: 15px;
+  font-size: 16px;
+}
+
+/* =========================
+   HIGHLIGHT / MAGAZINE
+========================= */
+.highlight {
+  padding: 50px 40px;
+  background: #fafafa;
+}
+
+.highlight h2 {
+  margin-bottom: 25px;
+}
+
+.highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.highlight-card {
+  border: 1px solid #eee;
+  padding: 20px;
+  background: white;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.highlight-card:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.highlight-card h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.highlight-card p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.highlight-card button {
+  background: #0f766e;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+/* =========================
+   CTA
+========================= */
+.cta {
+  background: #0f766e;
+  color: white;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cta button {
+  background: white;
+  color: #0f766e;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #f0f0f0;
+  font-size: 14px;
+}
